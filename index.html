@@ -1,360 +1,213 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FlowSync | Plataforma SaaS</title>
-  <meta
-    name="description"
-    content="Plataforma SaaS moderna para automação, gestão e crescimento de negócios."
-  />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  >
+<title>FlowSync | Plataforma de Gestão Empresarial</title>
 
-  <link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin:0;
+  font-family:Inter;
+  background:#0b0f19;
+  color:#fff;
+}
+
+.container {
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+}
+
+header {
+  padding:25px 0;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo {
+  font-weight:800;
+  font-size:20px;
+}
+
+.btn {
+  padding:12px 22px;
+  background:#6be7ff;
+  color:#000;
+  font-weight:600;
+  border-radius:8px;
+  text-decoration:none;
+}
+
+.hero {
+  padding:100px 0;
+}
+
+.hero h1 {
+  font-size:48px;
+  max-width:700px;
+  line-height:1.2;
+}
+
+.hero p {
+  margin-top:20px;
+  color:#aaa;
+  max-width:600px;
+}
+
+.stats {
+  display:flex;
+  gap:40px;
+  margin-top:40px;
+}
+
+.stats div {
+  font-weight:600;
+}
+
+.section {
+  padding:80px 0;
+}
+
+.cards {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.card {
+  background:#121829;
+  padding:25px;
+  border-radius:12px;
+}
+
+.footer {
+  padding:40px;
+  text-align:center;
+  color:#888;
+}
+</style>
+
 </head>
+
 <body>
-  <div class="bg-orb orb-1"></div>
-  <div class="bg-orb orb-2"></div>
 
-  <header class="header">
-    <div class="container nav">
-      <a href="#inicio" class="brand">
-        <span class="brand-dot"></span>
-        FlowSync
-      </a>
+<header class="container">
+<div class="logo">FlowSync</div>
+<a href="#" class="btn">Solicitar demo</a>
+</header>
 
-      <nav class="menu" id="menu">
-        <a href="#recursos">Recursos</a>
-        <a href="#metricas">Resultados</a>
-        <a href="#planos">Planos</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contato">Contato</a>
-      </nav>
+<section class="hero container">
 
-      <div class="nav-actions">
-        <a href="#planos" class="btn btn-ghost">Ver planos</a>
-        <a href="#contato" class="btn btn-primary">Solicitar demo</a>
-      </div>
+<h1>
+Plataforma de gestão para empresas que precisam escalar com controle e previsibilidade
+</h1>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </header>
+<p>
+Centralize operações, equipes e métricas em um único sistema.
+Elimine processos manuais e tome decisões com base em dados reais.
+</p>
 
-  <main>
-    <section class="hero" id="inicio">
-      <div class="container hero-grid">
-        <div class="hero-text reveal">
-          <p class="eyebrow">PLATAFORMA SaaS PREMIUM</p>
+<div class="stats">
+<div>+120 empresas</div>
+<div>+35% produtividade</div>
+<div>99.9% uptime</div>
+</div>
 
-          <h1>
-            Automatize processos,
-            <span>cresça com previsibilidade</span>
-            e tenha controle total do seu negócio.
-          </h1>
+</section>
 
-          <p class="hero-description">
-            A FlowSync centraliza operações, organiza equipes e automatiza tarefas
-            com uma interface moderna, rápida e pronta para empresas que querem escalar.
-          </p>
+<section class="section container">
 
-          <div class="hero-actions">
-            <a href="#contato" class="btn btn-primary">Solicitar demonstração</a>
-            <a href="#recursos" class="btn btn-ghost">Explorar recursos</a>
-          </div>
+<h2>Funcionalidades principais</h2>
 
-          <div class="hero-proof">
-            <div class="proof-item">
-              <strong>+42%</strong>
-              <span>mais produtividade</span>
-            </div>
-            <div class="proof-item">
-              <strong>-31%</strong>
-              <span>menos tarefas manuais</span>
-            </div>
-            <div class="proof-item">
-              <strong>24/7</strong>
-              <span>monitoramento</span>
-            </div>
-          </div>
-        </div>
+<div class="cards">
 
-        <div class="hero-panel reveal">
-          <div class="dashboard-card glass">
-            <div class="panel-top">
-              <div class="panel-dots">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-              <div class="panel-label">Dashboard</div>
-            </div>
+<div class="card">
+<h3>Dashboard em tempo real</h3>
+<p>Visualize indicadores e métricas com atualização instantânea.</p>
+</div>
 
-            <div class="dashboard-grid">
-              <div class="mini-card tall">
-                <p class="mini-label">Performance</p>
-                <h3>R$ 128.4k</h3>
-                <span class="mini-positive">+18.4% este mês</span>
-                <div class="fake-chart">
-                  <span></span><span></span><span></span><span></span><span></span>
-                  <span></span><span></span><span></span>
-                </div>
-              </div>
+<div class="card">
+<h3>Gestão de equipes</h3>
+<p>Controle tarefas, produtividade e desempenho da equipe.</p>
+</div>
 
-              <div class="mini-card">
-                <p class="mini-label">Leads</p>
-                <h3>2.840</h3>
-                <span>Captação em alta</span>
-              </div>
+<div class="card">
+<h3>Relatórios automatizados</h3>
+<p>Gere relatórios completos com poucos cliques.</p>
+</div>
 
-              <div class="mini-card">
-                <p class="mini-label">Conversão</p>
-                <h3>14.8%</h3>
-                <span>Meta superada</span>
-              </div>
+</div>
 
-              <div class="mini-card wide">
-                <p class="mini-label">Equipe</p>
-                <div class="users-row">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <b>+12</b>
-                </div>
-                <span>colaboradores ativos hoje</span>
-              </div>
-            </div>
-          </div>
+</section>
 
-          <div class="floating-badge badge-1">API integrada</div>
-          <div class="floating-badge badge-2">Relatórios em tempo real</div>
-        </div>
-      </div>
-    </section>
+<section class="section container">
 
-    <section class="logos-section">
-      <div class="container logos-row">
-        <span>TechCore</span>
-        <span>NovaScale</span>
-        <span>CloudWave</span>
-        <span>PrimeData</span>
-        <span>GrowthLab</span>
-      </div>
-    </section>
+<h2>Para quem é</h2>
 
-    <section class="section" id="recursos">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="section-tag">RECURSOS</p>
-          <h2>Uma plataforma completa para operação, gestão e crescimento.</h2>
-          <p>
-            Tudo em um único lugar, com foco em velocidade, clareza e tomada de decisão.
-          </p>
-        </div>
+<div class="cards">
 
-        <div class="features-grid">
-          <article class="feature-card glass reveal">
-            <div class="feature-icon">⚡</div>
-            <h3>Automação inteligente</h3>
-            <p>
-              Reduza tarefas repetitivas e organize fluxos de trabalho de forma automática.
-            </p>
-          </article>
+<div class="card">
+<p>Empresas em crescimento que precisam organizar operações</p>
+</div>
 
-          <article class="feature-card glass reveal">
-            <div class="feature-icon">📊</div>
-            <h3>Relatórios estratégicos</h3>
-            <p>
-              Dashboards com métricas essenciais para acompanhar crescimento e performance.
-            </p>
-          </article>
+<div class="card">
+<p>Times que querem sair de planilhas e processos manuais</p>
+</div>
 
-          <article class="feature-card glass reveal">
-            <div class="feature-icon">🔒</div>
-            <h3>Segurança e controle</h3>
-            <p>
-              Gerenciamento de acessos, histórico de ações e estrutura preparada para escala.
-            </p>
-          </article>
+<div class="card">
+<p>Negócios que precisam de controle e previsibilidade</p>
+</div>
 
-          <article class="feature-card glass reveal">
-            <div class="feature-icon">🧩</div>
-            <h3>Integrações</h3>
-            <p>
-              Conecte CRM, e-mail, API, financeiro e ferramentas externas sem complicação.
-            </p>
-          </article>
+</div>
 
-          <article class="feature-card glass reveal">
-            <div class="feature-icon">👥</div>
-            <h3>Gestão de equipe</h3>
-            <p>
-              Distribua tarefas, acompanhe progresso e mantenha todos alinhados em tempo real.
-            </p>
-          </article>
+</section>
 
-          <article class="feature-card glass reveal">
-            <div class="feature-icon">🚀</div>
-            <h3>Escalabilidade real</h3>
-            <p>
-              Estrutura pronta para crescer com sua operação sem perder desempenho.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
+<section class="section container">
 
-    <section class="section metrics-section" id="metricas">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="section-tag">RESULTADOS</p>
-          <h2>Indicadores que passam credibilidade e aparência de produto real.</h2>
-        </div>
+<h2>Depoimentos</h2>
 
-        <div class="metrics-grid">
-          <div class="metric-card glass reveal">
-            <strong>99.9%</strong>
-            <span>disponibilidade da plataforma</span>
-          </div>
-          <div class="metric-card glass reveal">
-            <strong>+8.500</strong>
-            <span>usuários ativos mensalmente</span>
-          </div>
-          <div class="metric-card glass reveal">
-            <strong>+120</strong>
-            <span>empresas atendidas</span>
-          </div>
-          <div class="metric-card glass reveal">
-            <strong>+1.2M</strong>
-            <span>ações processadas</span>
-          </div>
-        </div>
-      </div>
-    </section>
+<div class="cards">
 
-    <section class="section" id="planos">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="section-tag">PLANOS</p>
-          <h2>Estrutura comercial com cara de SaaS premium.</h2>
-        </div>
+<div class="card">
+<p>
+“Depois da implementação, aumentamos nossa produtividade em 40%.”
+</p>
+<strong>— Carlos Mendes, CEO</strong>
+</div>
 
-        <div class="pricing-grid">
-          <article class="pricing-card glass reveal">
-            <p class="plan-name">Starter</p>
-            <h3>R$ 59<span>/mês</span></h3>
-            <ul>
-              <li>Até 3 usuários</li>
-              <li>Painel básico</li>
-              <li>Automação inicial</li>
-              <li>Suporte por e-mail</li>
-            </ul>
-            <a href="#contato" class="btn btn-ghost full">Começar</a>
-          </article>
+<div class="card">
+<p>
+“Finalmente conseguimos centralizar toda operação em um sistema.”
+</p>
+<strong>— Fernanda Alves, Diretora</strong>
+</div>
 
-          <article class="pricing-card glass featured reveal">
-            <div class="featured-badge">Mais escolhido</div>
-            <p class="plan-name">Professional</p>
-            <h3>R$ 149<span>/mês</span></h3>
-            <ul>
-              <li>Até 15 usuários</li>
-              <li>Relatórios avançados</li>
-              <li>Integrações</li>
-              <li>Automação completa</li>
-              <li>Suporte prioritário</li>
-            </ul>
-            <a href="#contato" class="btn btn-primary full">Solicitar demo</a>
-          </article>
+</div>
 
-          <article class="pricing-card glass reveal">
-            <p class="plan-name">Enterprise</p>
-            <h3>Custom<span> sob consulta</span></h3>
-            <ul>
-              <li>Usuários ilimitados</li>
-              <li>Infra dedicada</li>
-              <li>API personalizada</li>
-              <li>Onboarding exclusivo</li>
-              <li>Gestor de conta</li>
-            </ul>
-            <a href="#contato" class="btn btn-ghost full">Falar com vendas</a>
-          </article>
-        </div>
-      </div>
-    </section>
+</section>
 
-    <section class="section faq-section" id="faq">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="section-tag">FAQ</p>
-          <h2>Perguntas frequentes</h2>
-        </div>
+<section class="section container">
 
-        <div class="faq-list">
-          <details class="faq-item glass reveal">
-            <summary>A plataforma funciona em qualquer dispositivo?</summary>
-            <p>Sim. O layout é responsivo e funciona em desktop, tablet e celular.</p>
-          </details>
+<h2>Pronto para escalar seu negócio?</h2>
 
-          <details class="faq-item glass reveal">
-            <summary>É possível integrar com sistemas externos?</summary>
-            <p>Sim. A estrutura foi pensada para integrações com APIs, CRM e ferramentas de automação.</p>
-          </details>
+<p>
+Solicite uma demonstração e veja como o FlowSync pode transformar sua operação.
+</p>
 
-          <details class="faq-item glass reveal">
-            <summary>Vocês oferecem suporte e onboarding?</summary>
-            <p>Sim. Os planos profissionais podem incluir onboarding guiado e suporte prioritário.</p>
-          </details>
-        </div>
-      </div>
-    </section>
+<br>
 
-    <section class="section contact-section" id="contato">
-      <div class="container">
-        <div class="contact-box glass reveal">
-          <p class="section-tag">CONTATO</p>
-          <h2>Solicite uma demonstração da plataforma.</h2>
-          <p>
-            Mostre no portfólio um projeto com aparência comercial forte, estrutura clara
-            e posicionamento de produto premium.
-          </p>
+<a href="#" class="btn">Agendar demonstração</a>
 
-          <form class="contact-form" id="contactForm">
-            <div class="input-row">
-              <input type="text" placeholder="Seu nome" required>
-              <input type="email" placeholder="Seu e-mail" required>
-            </div>
-            <div class="input-row single">
-              <input type="text" placeholder="Nome da empresa">
-            </div>
-            <div class="input-row single">
-              <textarea placeholder="Conte brevemente sobre sua necessidade"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar solicitação</button>
-          </form>
+</section>
 
-          <p class="form-message" id="formMessage"></p>
-        </div>
-      </div>
-    </section>
-  </main>
+<div class="footer">
+© 2026 FlowSync. Todos os direitos reservados.
+</div>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <p>© 2026 FlowSync. Todos os direitos reservados.</p>
-      <p>Projeto demonstrativo para portfólio.</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
