@@ -1,213 +1,399 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlowSync | Plataforma de Gestão Empresarial</title>
+  <meta name="description" content="Plataforma de gestão empresarial para operações, equipes, métricas e automação de processos." />
 
-<title>FlowSync | Plataforma de Gestão Empresarial</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-<style>
-body {
-  margin:0;
-  font-family:Inter;
-  background:#0b0f19;
-  color:#fff;
-}
-
-.container {
-  width:90%;
-  max-width:1200px;
-  margin:auto;
-}
-
-header {
-  padding:25px 0;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-
-.logo {
-  font-weight:800;
-  font-size:20px;
-}
-
-.btn {
-  padding:12px 22px;
-  background:#6be7ff;
-  color:#000;
-  font-weight:600;
-  border-radius:8px;
-  text-decoration:none;
-}
-
-.hero {
-  padding:100px 0;
-}
-
-.hero h1 {
-  font-size:48px;
-  max-width:700px;
-  line-height:1.2;
-}
-
-.hero p {
-  margin-top:20px;
-  color:#aaa;
-  max-width:600px;
-}
-
-.stats {
-  display:flex;
-  gap:40px;
-  margin-top:40px;
-}
-
-.stats div {
-  font-weight:600;
-}
-
-.section {
-  padding:80px 0;
-}
-
-.cards {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
-}
-
-.card {
-  background:#121829;
-  padding:25px;
-  border-radius:12px;
-}
-
-.footer {
-  padding:40px;
-  text-align:center;
-  color:#888;
-}
-</style>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
 
-<header class="container">
-<div class="logo">FlowSync</div>
-<a href="#" class="btn">Solicitar demo</a>
-</header>
+  <header class="header">
+    <div class="container nav">
+      <a href="#inicio" class="logo">FlowSync</a>
 
-<section class="hero container">
+      <nav class="menu">
+        <a href="#modulos">Módulos</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#integracoes">Integrações</a>
+        <a href="#seguranca">Segurança</a>
+        <a href="#planos">Planos</a>
+        <a href="#faq">FAQ</a>
+      </nav>
 
-<h1>
-Plataforma de gestão para empresas que precisam escalar com controle e previsibilidade
-</h1>
+      <div class="nav-actions">
+        <a href="#" class="btn btn-secondary">Entrar</a>
+        <a href="#contato" class="btn btn-primary">Solicitar demo</a>
+      </div>
+    </div>
+  </header>
 
-<p>
-Centralize operações, equipes e métricas em um único sistema.
-Elimine processos manuais e tome decisões com base em dados reais.
-</p>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow">PLATAFORMA DE GESTÃO EMPRESARIAL</p>
 
-<div class="stats">
-<div>+120 empresas</div>
-<div>+35% produtividade</div>
-<div>99.9% uptime</div>
-</div>
+          <h1>
+            Centralize operações,
+            equipes e métricas em uma
+            <span>única plataforma</span>.
+          </h1>
 
-</section>
+          <p class="hero-text">
+            O FlowSync foi desenvolvido para empresas que precisam escalar com
+            previsibilidade, reduzir retrabalho e transformar dados em decisões.
+          </p>
 
-<section class="section container">
+          <div class="hero-actions">
+            <a href="#contato" class="btn btn-primary">Solicitar demonstração</a>
+            <a href="#modulos" class="btn btn-secondary">Explorar módulos</a>
+          </div>
 
-<h2>Funcionalidades principais</h2>
+          <div class="hero-stats">
+            <div class="stat-card">
+              <strong>+120</strong>
+              <span>empresas atendidas</span>
+            </div>
+            <div class="stat-card">
+              <strong>+35%</strong>
+              <span>ganho operacional médio</span>
+            </div>
+            <div class="stat-card">
+              <strong>99,9%</strong>
+              <span>disponibilidade da plataforma</span>
+            </div>
+          </div>
+        </div>
 
-<div class="cards">
+        <div class="hero-panel reveal">
+          <div class="dashboard-card glass">
+            <div class="dashboard-top">
+              <div class="window-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <p>Painel Executivo</p>
+            </div>
 
-<div class="card">
-<h3>Dashboard em tempo real</h3>
-<p>Visualize indicadores e métricas com atualização instantânea.</p>
-</div>
+            <div class="dashboard-main">
+              <div class="kpi large">
+                <span>Receita processada</span>
+                <strong>R$ 2,48M</strong>
+                <small>+18,2% no mês</small>
+              </div>
 
-<div class="card">
-<h3>Gestão de equipes</h3>
-<p>Controle tarefas, produtividade e desempenho da equipe.</p>
-</div>
+              <div class="kpi">
+                <span>Tarefas concluídas</span>
+                <strong>1.284</strong>
+              </div>
 
-<div class="card">
-<h3>Relatórios automatizados</h3>
-<p>Gere relatórios completos com poucos cliques.</p>
-</div>
+              <div class="kpi">
+                <span>Equipes ativas</span>
+                <strong>16</strong>
+              </div>
 
-</div>
+              <div class="chart-card">
+                <span>Performance operacional</span>
+                <div class="bars">
+                  <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                </div>
+              </div>
 
-</section>
+              <div class="team-card">
+                <span>Gestão de times</span>
+                <div class="avatars">
+                  <b></b><b></b><b></b><b></b><em>+12</em>
+                </div>
+              </div>
+            </div>
+          </div>
 
-<section class="section container">
+          <div class="floating-tag tag-1">Automação de processos</div>
+          <div class="floating-tag tag-2">Dashboards em tempo real</div>
+        </div>
+      </div>
+    </section>
 
-<h2>Para quem é</h2>
+    <section class="trusted">
+      <div class="container trusted-row">
+        <span>Atlas Group</span>
+        <span>NovaLog</span>
+        <span>PrimeChain</span>
+        <span>Vertex Corp</span>
+        <span>BlueGrid</span>
+      </div>
+    </section>
 
-<div class="cards">
+    <section class="section" id="modulos">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-tag">MÓDULOS</p>
+          <h2>Recursos que organizam a operação e aumentam a previsibilidade.</h2>
+          <p>Uma arquitetura pensada para empresas que precisam de clareza, controle e escala.</p>
+        </div>
 
-<div class="card">
-<p>Empresas em crescimento que precisam organizar operações</p>
-</div>
+        <div class="cards-grid">
+          <article class="card glass reveal">
+            <h3>Dashboard executivo</h3>
+            <p>Indicadores estratégicos com leitura rápida para gestores e liderança.</p>
+          </article>
 
-<div class="card">
-<p>Times que querem sair de planilhas e processos manuais</p>
-</div>
+          <article class="card glass reveal">
+            <h3>Gestão de equipes</h3>
+            <p>Acompanhamento de produtividade, responsáveis, prazos e capacidade operacional.</p>
+          </article>
 
-<div class="card">
-<p>Negócios que precisam de controle e previsibilidade</p>
-</div>
+          <article class="card glass reveal">
+            <h3>Fluxos automatizados</h3>
+            <p>Padronize tarefas, aprove aprovações e reduza etapas manuais do dia a dia.</p>
+          </article>
 
-</div>
+          <article class="card glass reveal">
+            <h3>Relatórios inteligentes</h3>
+            <p>Geração de relatórios com filtros por setor, período, time e performance.</p>
+          </article>
 
-</section>
+          <article class="card glass reveal">
+            <h3>Central de processos</h3>
+            <p>Documente fluxos, acompanhe status e dê visibilidade total à operação.</p>
+          </article>
 
-<section class="section container">
+          <article class="card glass reveal">
+            <h3>Permissões por perfil</h3>
+            <p>Controle de acesso por usuário, função, unidade ou área de negócio.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<h2>Depoimentos</h2>
+    <section class="section dark-section" id="como-funciona">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-tag">COMO FUNCIONA</p>
+          <h2>Uma implantação simples, com impacto operacional rápido.</h2>
+        </div>
 
-<div class="cards">
+        <div class="timeline">
+          <div class="step glass reveal">
+            <span class="step-number">01</span>
+            <h3>Diagnóstico</h3>
+            <p>Mapeamento da operação atual, gargalos e metas da empresa.</p>
+          </div>
 
-<div class="card">
-<p>
-“Depois da implementação, aumentamos nossa produtividade em 40%.”
-</p>
-<strong>— Carlos Mendes, CEO</strong>
-</div>
+          <div class="step glass reveal">
+            <span class="step-number">02</span>
+            <h3>Configuração</h3>
+            <p>Estruturação do ambiente, equipes, processos, regras e permissões.</p>
+          </div>
 
-<div class="card">
-<p>
-“Finalmente conseguimos centralizar toda operação em um sistema.”
-</p>
-<strong>— Fernanda Alves, Diretora</strong>
-</div>
+          <div class="step glass reveal">
+            <span class="step-number">03</span>
+            <h3>Integração</h3>
+            <p>Conexão com ferramentas essenciais para o fluxo da empresa.</p>
+          </div>
 
-</div>
+          <div class="step glass reveal">
+            <span class="step-number">04</span>
+            <h3>Escala</h3>
+            <p>Acompanhamento de indicadores e evolução contínua da operação.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</section>
+    <section class="section" id="integracoes">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-tag">INTEGRAÇÕES</p>
+          <h2>Conecte o FlowSync ao ecossistema da sua empresa.</h2>
+        </div>
 
-<section class="section container">
+        <div class="integration-grid">
+          <div class="integration-card glass reveal">CRM</div>
+          <div class="integration-card glass reveal">ERP</div>
+          <div class="integration-card glass reveal">Financeiro</div>
+          <div class="integration-card glass reveal">E-mail</div>
+          <div class="integration-card glass reveal">APIs</div>
+          <div class="integration-card glass reveal">BI / Analytics</div>
+        </div>
+      </div>
+    </section>
 
-<h2>Pronto para escalar seu negócio?</h2>
+    <section class="section dark-section" id="seguranca">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-tag">SEGURANÇA</p>
+          <h2>Estrutura confiável para operações críticas.</h2>
+        </div>
 
-<p>
-Solicite uma demonstração e veja como o FlowSync pode transformar sua operação.
-</p>
+        <div class="security-grid">
+          <article class="card glass reveal">
+            <h3>Controle de acesso</h3>
+            <p>Perfis e permissões por função, setor e responsabilidade operacional.</p>
+          </article>
 
-<br>
+          <article class="card glass reveal">
+            <h3>Logs e auditoria</h3>
+            <p>Rastreamento de alterações e ações importantes dentro do sistema.</p>
+          </article>
 
-<a href="#" class="btn">Agendar demonstração</a>
+          <article class="card glass reveal">
+            <h3>Disponibilidade</h3>
+            <p>Infraestrutura projetada para estabilidade e continuidade do serviço.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-</section>
+    <section class="section" id="depoimentos">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-tag">RESULTADOS</p>
+          <h2>Percepção de valor vem de prova social e resultado.</h2>
+        </div>
 
-<div class="footer">
-© 2026 FlowSync. Todos os direitos reservados.
-</div>
+        <div class="testimonials-grid">
+          <article class="testimonial glass reveal">
+            <p>“Depois da implantação, reduzimos ruídos operacionais e ganhamos visibilidade total da equipe.”</p>
+            <strong>Carlos Mendes</strong>
+            <span>Diretor de Operações</span>
+          </article>
 
+          <article class="testimonial glass reveal">
+            <p>“O FlowSync nos tirou de planilhas e criou um padrão de gestão muito mais previsível.”</p>
+            <strong>Fernanda Alves</strong>
+            <span>COO</span>
+          </article>
+
+          <article class="testimonial glass reveal">
+            <p>“A clareza dos dashboards acelerou decisões importantes e melhorou nossa produtividade.”</p>
+            <strong>Ricardo Teles</strong>
+            <span>CEO</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="planos">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-tag">PLANOS</p>
+          <h2>Estrutura comercial com cara de produto real.</h2>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="price-card glass reveal">
+            <h3>Starter</h3>
+            <strong>R$ 89/mês</strong>
+            <p>Para operações menores em fase de estruturação.</p>
+            <ul>
+              <li>Até 5 usuários</li>
+              <li>Dashboard básico</li>
+              <li>Relatórios essenciais</li>
+            </ul>
+            <a href="#contato" class="btn btn-secondary full">Começar</a>
+          </div>
+
+          <div class="price-card glass featured reveal">
+            <span class="badge">Mais escolhido</span>
+            <h3>Professional</h3>
+            <strong>R$ 249/mês</strong>
+            <p>Para empresas que precisam de controle e integração.</p>
+            <ul>
+              <li>Até 20 usuários</li>
+              <li>Automação de processos</li>
+              <li>Relatórios avançados</li>
+              <li>Integrações</li>
+            </ul>
+            <a href="#contato" class="btn btn-primary full">Solicitar demo</a>
+          </div>
+
+          <div class="price-card glass reveal">
+            <h3>Enterprise</h3>
+            <strong>Sob consulta</strong>
+            <p>Para operações complexas com necessidade de escala.</p>
+            <ul>
+              <li>Usuários ilimitados</li>
+              <li>Infra dedicada</li>
+              <li>API personalizada</li>
+              <li>Onboarding estratégico</li>
+            </ul>
+            <a href="#contato" class="btn btn-secondary full">Falar com vendas</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="faq">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-tag">FAQ</p>
+          <h2>Perguntas frequentes</h2>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item glass reveal">
+            <summary>O FlowSync é indicado para quais empresas?</summary>
+            <p>Empresas que precisam organizar operações, centralizar processos e reduzir dependência de controles manuais.</p>
+          </details>
+
+          <details class="faq-item glass reveal">
+            <summary>É possível integrar com ferramentas existentes?</summary>
+            <p>Sim. A estrutura foi pensada para integração com sistemas externos, APIs, CRM e soluções internas.</p>
+          </details>
+
+          <details class="faq-item glass reveal">
+            <summary>O sistema é personalizável?</summary>
+            <p>Sim. Dependendo do plano, é possível ajustar fluxos, permissões, módulos e integrações.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contato">
+      <div class="container">
+        <div class="contact-box glass reveal">
+          <p class="section-tag">DEMONSTRAÇÃO</p>
+          <h2>Solicite uma apresentação da plataforma.</h2>
+          <p class="contact-text">
+            Conheça na prática como o FlowSync pode organizar a operação da sua empresa e elevar a previsibilidade da gestão.
+          </p>
+
+          <form class="contact-form" id="contactForm">
+            <div class="row">
+              <input type="text" placeholder="Nome" required>
+              <input type="email" placeholder="E-mail corporativo" required>
+            </div>
+            <div class="row">
+              <input type="text" placeholder="Empresa">
+              <input type="text" placeholder="Telefone">
+            </div>
+            <div class="row single">
+              <textarea placeholder="Conte brevemente sobre sua operação"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Solicitar contato</button>
+          </form>
+
+          <p class="success-message" id="successMessage"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 FlowSync. Todos os direitos reservados.</p>
+      <p>Plataforma de gestão empresarial.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
